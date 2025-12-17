@@ -1,0 +1,79 @@
+.qwicbokkProSec{}
+.qwicbokkProSecinner{}
+.qwicbokkTopInfoinner {color: #050505;letter-spacing: 0.3px;background-color:#fff;border: 1px solid #ACD3CD;box-shadow: 0 0px 0px rgba(172, 211, 205, 0.1), 0 0px 0px rgba(172, 211, 205, 0.1), 0 4px 6px rgba(172, 211, 205, 0.35), 0 0px 0px rgba(172, 211, 205, 0.1);    padding: 10px 10px;border-radius: 8px;}
+.qwicbokkTopInfoinner .icon {margin-right: 15px;}
+.qwicbokkTopInfoinner .icon img{}
+.qwicbokkTopInfoinner .content {-webkit-box-flex: 1;-ms-flex: 1;flex: 1;}
+.qwicbokkTopInfoinner .content .title {font-size: 14px;line-height: 20px;}
+.qwicbokkProFormArea{}
+.qwicbokkProFormArea .form-group{margin-bottom:35px;}
+.qwicbokkProFormArea .form-group .labelName{display:block;font-size: 18px;font-weight: 600;margin-bottom: 10px;}
+.qwicbokkProFormArea .form-group .form-control{padding: 10px 12px;font-size: 16px;}
+.qwicbokkProFormArea .form-group .form-select{padding: 10px 12px;font-size: 16px;}
+.qwicbokkProFormArea .input-group{}
+.qwicbokkProFormArea .input-group-text{background-color: #fff;padding:5px 10px}
+.qwicbokkProFormArea .input-group-text img{height:30px;}
+.qwicbokkProFormArea .input-group .form-control {}
+.qwicbokkProFormArea .form-check{}
+.qwicbokkProFormArea .form-check .form-check-input{background-color: transparent; border-color: #687da9;box-shadow: none;}
+.qwicbokkProFormArea .form-check .form-check-input:focus{outline:none;}
+.qwicbokkProFormArea .form-check .form-check-input:checked {background-color: #0d6efd; border-color: #0d6efd;}
+.qwicbokkProFormArea .form-check .form-check-label{font-weight:600;}
+.noteInfoArea{color: #050505;letter-spacing: 0.3px;background-color:#fff;border: 1px solid #ACD3CD;box-shadow: 0 0px 0px rgba(172, 211, 205, 0.1), 0 0px 0px rgba(172, 211, 205, 0.1), 0 4px 6px rgba(172, 211, 205, 0.35), 0 0px 0px rgba(172, 211, 205, 0.1);    padding: 10px 10px;border-radius: 8px;}
+.noteInfoArea p{font-size: 14px;line-height: 20px;color: #565759;}
+.qwicbokkProFormArea .qwicbokkProFormBtnArea {}
+.qwicbokkProFormArea .qwicbokkProFormBtnArea .qwicbokkProFormBtn{font-size:16px;font-weight:600;background-color:#12cefb;border-color:#12cefb;color:#fff;padding:10px 10px;}
+.userDetailsSec{padding: 15px 0;}
+.userDetailsTopBar{border-top: 1px solid #e2e8f0;border-bottom: 1px solid #e2e8f0;}
+.userDetailsTopBarinner{padding:10px 0;}
+.userDetailsTopBarinner .dataTime{}
+.userDetailsTopBarinner .dataTime .icon{margin-right:5px;}
+.userDetailsTopBarinner .dataTime .icon img{height:22px;}
+.userDetailsTopBarinner .dataTime .txt{font-size:14px;font-weight:600;}
+.userDetailsInfoArea{}
+.userDetailsInfoItem{}
+.userDetailsInfoArea .userDetailsInfoItem{padding: 10px 0; border-bottom: 1px solid #e2e8f0;}
+.userDetailsInfoItem .title{font-size: 18px;font-weight: 600;}
+.userDetailsInfoItem .para{font-size:16px;margin-bottom:3px;}
+.qwicbokkProFormArea.userDetailsInfoFormArea .form-group {margin-bottom: 25px;}
+.userDetailsInfoFormArea .userInfo{
+    /* padding: 8px 10px; */
+    /* background-color: #ebebeb; */
+    /* border: 1px solid #dfdede; */
+    border-radius: 2px;
+    font-size: 13px;
+    font-weight: 600;
+	margin-bottom:15px;	
+}
+
+.bookingInfo {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.bookingInfoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0;
+}
+
+.bookingInfoItem .title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.bookingInfoItem .txt {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.input-group {
+    flex-direction: row !important;
+    gap: 0 !important;
+}
+

@@ -1,0 +1,167 @@
+/* app.css - full stylesheet for responsive mobile-first layout */
+/* reset & base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; background:#f8f9fb; color:#222; }
+a { color: inherit; text-decoration: none; }
+/* app container */
+.app-container {
+width: 100%;
+max-width: 480px; /* keep layout similar to screenshot on larger phones */
+margin: 0 auto;
+padding: 10px 12px;
+background: #f8f9fb;
+min-height: 100vh;
+}
+/* Topbar */
+.topbar {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: linear-gradient(90deg,#2b80ff,#2e5efc);
+color: #fff;
+padding: 12px;
+border-radius: 8px;
+gap: 12px;
+position: sticky;
+top: 0;
+z-index: 40;
+}
+.topbar-left {
+display: flex;
+align-items: center;
+gap: 10px;
+min-width: 0;
+}
+.circle.brand {
+width: 44px;
+height: 44px;
+border-radius: 10px;
+background: rgba(255,255,255,0.15);
+display: inline-flex;
+align-items: center;
+justify-content: center;
+font-weight: 700;
+font-size: 18px;
+color: #fff;
+border: none;
+}
+.clinic-title { font-weight: 700; font-size: 18px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* header action icons */
+.header-actions { display:flex; align-items:center; gap:8px; flex-shrink: 0; }
+.icon-btn {
+width: 38px; height: 38px; border-radius: 10px;
+background: rgba(255,255,255,0.12);
+display:inline-flex; align-items:center; justify-content:center;
+color: #fff; border: none;
+font-size:16px;
+}
+.icon-btn.more { font-size:20px; }
+/* Date section */
+.date-section { margin-top: 12px; margin-bottom: 12px; }
+.date-controls { display:flex; align-items:center; gap:6px; }
+.date-arrow {
+width:44px; height:44px; border-radius:10px; border:none;
+background:#fff; box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+font-size:20px;
+}
+/* horizontal date list */
+.date-list-wrapper {
+overflow-x: auto;
+-webkit-overflow-scrolling: touch;
+flex: 1 1 auto;
+padding: 4px 6px;
+}
+.date-list {
+display:flex; gap:10px; align-items:center;
+}
+.date-item {
+min-width: 110px;
+flex: 0 0 auto;
+background: #fff;
+padding: 8px 12px;
+border-radius: 12px;
+box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+font-size: 13px;
+text-align: center;
+}
+.date-item.active { background: linear-gradient(90deg,#fff 0%, #fff 0%); border: 2px solid rgba(46,94,252,0.12); }
+/* Appointments list */
+.appointments { margin-top: 6px; display:flex; flex-direction:column; gap:8px; padding-bottom: 28px; }
+/* Card */
+.appointment-card {
+display:flex; gap:12px; align-items:stretch;
+background:#fff; border-radius:10px; padding:10px;
+box-shadow: 0 2px 6px rgba(6,20,38,0.04);
+overflow: hidden;
+align-items: center;
+}
+/* left colored badge */
+.left-badge {
+width:52px; min-width:52px; height:78px;
+border-radius:10px;
+color:#fff; font-weight:700; font-size:18px;
+display:flex; align-items:center; justify-content:center;
+}
+/* main content */
+.appointment-content {
+display:flex; align-items:center; justify-content:space-between;
+gap:10px; width:100%;
+min-width: 0;
+}
+/* details */
+.appointment-details {
+display:flex; flex-direction:column; gap:6px; min-width:0;
+}
+.patient-name { font-size:16px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.patient-phone { font-size:13px; color:#6b7280; }
+/* right side */
+.appointment-right {
+display:flex; align-items:center; gap:8px;
+flex-shrink: 0;
+}
+.appointment-time { font-size:14px; color:#6b7280; min-width:56px; text-align:right; white-space:nowrap; }
+/* token badge & status */
+.token-badge {
+display:inline-flex; align-items:center; justify-content:center;
+font-weight:700; border-radius:12px; padding:6px 8px; min-width:34px;
+background: #ff9f43; color:#fff; font-size:13px;
+box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+}
+.token-badge.orange { background: #ff8c42; }
+.status-badge {
+display:inline-flex; align-items:center; justify-content:center;
+padding:4px 8px; border-radius:12px; font-size:12px; min-width:40px;
+background:#e6f4ea; color:#1b7a3e; font-weight:700;
+}
+.status-badge.out { background:#ffecec; color:#d94b45; }
+/* Prevent page horizontal overflow */
+html, body { overflow-x: hidden; }
+/* ---------------- Small screen tweaks ---------------- */
+@media (max-width: 420px) {
+.topbar { padding: 10px; border-radius: 8px; }
+.circle.brand { width:40px; height:40px; font-size:16px; border-radius:8px; }
+.clinic-title { font-size:16px; }
+.icon-btn { width:36px; height:36px; }
+.date-item { min-width: 100px; padding:8px 10px; font-size:13px; }
+.left-badge { width:46px; min-width:46px; height:70px; font-size:16px; border-radius:8px; }
+.appointment-card { padding:8px; border-radius:8px; }
+.patient-name { font-size:15px; }
+.patient-phone { font-size:12px; }
+.appointment-time { font-size:13px; min-width:42px; }
+.token-badge { min-width:28px; padding:5px 7px; font-size:13px; }
+.status-badge { min-width:34px; padding:4px 6px; font-size:11px; }
+}
+/* Very small phones */
+@media (max-width: 360px) {
+.app-container { padding-left:10px; padding-right:10px; }
+.date-arrow { width:36px; height:36px; }
+.date-item { min-width:92px; padding:7px 8px; font-size:12px; }
+.left-badge { width:44px; height:64px; }
+.appointment-right { gap:6px; }
+.icon-btn { width:34px; height:34px; font-size:15px; }
+.clinic-title { font-size:15px; }
+}
+/* Accessibility / little polish */
+.icon-btn:focus, .date-arrow:focus, .token-badge:focus { outline: 3px solid rgba(46,94,252,0.18); outline-offset: 2px; }
+/* End of file */
+

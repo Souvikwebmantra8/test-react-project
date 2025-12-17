@@ -1,0 +1,171 @@
+ /* Page-Specific Styles for Time Selection */
+        
+        /* Header Layout for Time Selection Page */
+        .app-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        
+        /* Time Slots Container */
+        .time-slots-container {
+            padding: 20px 16px;
+            padding-bottom: 40px;
+        }
+        
+        .time-slot-card {
+            background: #fff;
+            border-radius: 0px;
+            padding: 0px 10px 0px 0px;   
+            transition: all 0.2s ease;
+            border-top: 1px solid #e2e8f0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+        
+        .time-slot-card:hover {
+            box-shadow: 0 4px 12px rgba(79, 209, 197, 0.15);
+            transform: translateY(-2px);
+            border-color: var(--accent-color);
+        }
+        
+        .time-slot-card:active {
+            transform: translateY(0);
+        }
+        
+        .time-slot-left {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        
+        .clock-icon {
+            width: 45px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;           
+            flex-shrink: 0;
+			background: #14b8a6;
+			color: #fff;
+			box-shadow: 0 2px 6px rgba(20, 184, 166, 0.25);
+        }
+        
+        .clock-icon i {
+            font-size: 20px;            
+        }
+        .avatar-1 {
+			background: #14b8a6;
+			color:#fff;
+			box-shadow: 0 2px 6px rgba(20, 184, 166, 0.25);
+		}
+		.avatar-2 {
+			background: #a855f7;
+			box-shadow: 0 2px 6px rgba(168, 85, 247, 0.25);
+		}
+		.avatar-3 {
+			background: #6366f1;
+			box-shadow: 0 2px 6px rgba(99, 102, 241, 0.25);
+		}
+		.avatar-4 {
+			background: #ec4899;
+			box-shadow: 0 2px 6px rgba(236, 72, 153, 0.25);
+		}
+        .time-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--dark-color);
+            letter-spacing: -0.2px;
+        }
+        
+        /* Override token badge for time selection page */
+        .token-badge {
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 14px;
+            box-shadow: 0 2px 6px rgba(64, 129, 255, 0.4);
+			box-shadow: 0 2px 6px rgba(249, 115, 22, 0.25);
+            letter-spacing: 0.3px;
+            flex-shrink: 0;
+        }
+        
+        .time-slot-card {
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .time-slot-card:nth-child(1) { animation-delay: 0.05s; }
+        .time-slot-card:nth-child(2) { animation-delay: 0.1s; }
+        .time-slot-card:nth-child(3) { animation-delay: 0.15s; }
+        .time-slot-card:nth-child(4) { animation-delay: 0.2s; }
+        .time-slot-card:nth-child(5) { animation-delay: 0.25s; }
+        .time-slot-card:nth-child(6) { animation-delay: 0.3s; }
+        .time-slot-card:nth-child(7) { animation-delay: 0.35s; }
+        .time-slot-card:nth-child(8) { animation-delay: 0.4s; }
+        .time-slot-card:nth-child(9) { animation-delay: 0.45s; }
+
+        .timetoken-badge {
+            width: auto !important;
+            height: auto !important;
+            border-radius: 20px !important;
+        }
+
+        .time-slot-card {
+            border-width: 0 !important;
+            border-top: 1px solid #e2e8f0 !important;
+        }
+
+        
+        
+        /* Responsive Design for Time Selection */
+        @media (max-width: 576px) {
+            .time-slots-container {
+                padding: 0px 0px;
+            }
+            
+            .time-slot-card {               
+            }
+            
+            .clock-icon {
+                
+            }
+            
+            .clock-icon i {
+               
+            }
+            
+            .time-text {
+                font-size: 16px;
+            }
+            
+            .token-badge {
+                padding: 4px 12px;
+                font-size: 12px;
+            }
+        }
+        
+        @media (max-width: 380px) {
+            .time-slot-left {
+                gap: 12px;
+            }
+            
+            .clock-icon {
+              
+            }
+            
+            .clock-icon i {
+                
+            }
+            
+            .time-text {
+               
+            }
+            
+            .token-badge {               
+            }
+        }
+
